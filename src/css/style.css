@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.row {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: #fbfcff;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 4px #31397c solid;
+  transition: top 0.5s;
+}
+.navbar .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.5s;
+}
+.navbar .home-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #31397c;
+  font-size: 18px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: top 0.5s;
+}
+.navbar ul b {
+  font-family: "Excon", sans-serif;
+  color: #31397c;
+}
+.navbar ul .navlink {
+  text-decoration: none;
+  color: #31397c;
+  font-weight: 500;
+}
+.navbar ul .contact-btn {
+  background-color: #5f8cdb;
+  color: #fff;
+}
+.navbar ul .contact-btn:hover {
+  background-color: #477bd6;
+}
+.navbar ul * {
+  list-style: none;
+  padding: 15px;
+  transition: 0.1s;
+}
+.navbar ul *:hover {
+  background-color: #e4f0ff;
+}
+
+.navbar--hidden {
+  top: -75px;
+  transition: top 0.5s;
+}
+
+header {
+  height: 75vh;
+  background: url("../img/Meteor.svg") center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content h2 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 50px;
+}
+header .header-content img {
+  width: 25vw;
+}
+header .header-content a {
+  color: #000;
+  padding: 15px 60px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background-color: #fff;
+  border: 4px solid #496799;
+  transition: 0.3s;
+}
+header .header-content a:hover {
+  background-color: #cbdcfb;
+}
+
+.sec-title {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: #31397c;
+}
+
+main section {
+  padding: 100px 0;
+}
+main .why-me .items {
+  margin-top: 50px;
+  gap: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+main .why-me .items .item {
+  text-align: center;
+  flex: 1 1 0px;
+}
+main .why-me .items .item i {
+  color: #31397c;
+  font-size: 3rem;
+  border: 1px solid #31397c;
+  padding: 12px;
+  border-radius: 10px;
+}
+main .why-me .items .item h4 {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  color: #31397c;
+}
+main .why-me .items .item p {
+  color: #31397c;
+  font-weight: 500;
+}
+main .about {
+  background: url("../img/Meteor.svg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+main .about .sec-title {
+  color: #fff;
+  padding-bottom: 70px;
+}
+main .about b {
+  color: #fff;
+  font-size: 23px;
+}
+main .about b span {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+main .about .items {
+  margin: 40px 0 0 100px;
+}
+main .about .items .item {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+main .about .items .item i {
+  font-size: 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+main .about .items .item p {
+  font-size: 20px;
+  padding-left: 13px;
+}
+main .contact-me {
+  background: url(../img/wave.svg) center no-repeat;
+  background-size: cover;
+}
+main .contact-me .row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .contact-me .row .ormail {
+  margin-top: 50px;
+}
+main .contact-me .row .ormail a {
+  padding-left: 10px;
+  color: #31397c;
+  font-weight: 500;
+}
+main .contact-me form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 50px;
+}
+main .contact-me form input,
+main .contact-me form textarea {
+  border: 3px solid rgba(51, 121, 194, 0.58);
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  color: #31397c;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+main .contact-me form label {
+  padding-bottom: 4px;
+  color: #31397c;
+}
+main .contact-me form input[type=submit] {
+  background-color: #6f94d4;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #31397c;
+  color: #fff;
+  padding: 25px 0;
+}
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .row .links {
+  display: flex;
+  flex-direction: column;
+}
+footer .row .links a {
+  color: #c8ccef;
+  text-decoration: none;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+footer .row .links a:hover {
+  color: #f1f2fd;
+}
+footer .row .links a span {
+  padding: 0 7px;
+}
+footer .row p {
+  text-align: center;
+}
+
+.about-page {
+  background: url("../img/aboutbg.svg") center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 300vh;
+}
+.about-page .about-title {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+.about-page .about-main {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.about-page .about-main img {
+  border: 10px solid #e2e5ff;
+  border-radius: 75px;
+  width: 20%;
+}
+.about-page .about-main p {
+  color: #d5d9ff;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin-left: 150px;
+}
+.about-page .info-parallax {
+  display: flex;
+  margin-top: 50px;
+}
+.about-page .info-parallax .parallax-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-page .info-parallax .parallax-img img {
+  margin-bottom: 500px;
+}
+.about-page .info-parallax .texts p {
+  height: 100vh;
+}
+
+.portfolio {
+  background: url("../img/Meteor.svg") center no-repeat;
+  background-size: cover;
+}
+.portfolio h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+.portfolio .items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.portfolio .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 50%;
+  margin-bottom: 50px;
+}
+.portfolio .items .item img {
+  width: 80%;
+  border: 3px #edefff solid;
+  border-radius: 15px;
+}
+.portfolio .items .item a {
+  color: #dce9ff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.portfolio .items .item a i {
+  padding-left: 5px;
+}
+.portfolio .items .item p {
+  color: #d3d8ff;
+  width: 80%;
+}
+
+.contact {
+  background: url("../img/contour.svg") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.contact h3 a,
+.contact h3 abbr {
+  text-decoration: none;
+}
+.contact h3 a {
+  color: #747ed8;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(97, 104, 169, 0.5);
+  border-radius: 25px;
+  width: 30%;
+  padding: 50px 0;
+}
+.contact form h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.9rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contact form input,
+.contact form textarea {
+  resize: none;
+  padding: 10px 40px;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.2s;
+  border: none;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.6);
+}
+.contact form input:focus,
+.contact form textarea:focus {
+  outline: #bbd5ff solid 4px;
+}
+.contact form input[type=submit] {
+  cursor: pointer;
+  background-color: rgba(49, 57, 124, 0.6);
+  color: #fff;
+  border: 1px #bec3f4 solid;
+}
+.contact form label {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .contact-me form {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .why-me .items {
+    flex-direction: column;
+  }
+  footer .row {
+    flex-direction: column;
+  }
+  footer .row > * {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-me form {
+    width: 90% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
